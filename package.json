@@ -1,0 +1,61 @@
+{
+  "name": "ts-purchase-amount",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:doc": "npm run doc",
+    "show:doc": "live-server doc",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKoliberskiy/TS-purchase-amount.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Igor Koliberskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorKoliberskiy/TS-purchase-amount/issues"
+  },
+  "homepage": "https://github.com/IgorKoliberskiy/TS-purchase-amount#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.2.3",
+    "babel-jest": "^29.3.1",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "jsdoc": "^4.0.0",
+    "live-server": "^1.1.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.26.1"
+  }
+}
